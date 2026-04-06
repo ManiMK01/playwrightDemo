@@ -127,6 +127,7 @@ test("drag and drop action", async({page})=>{
     let target =  page.locator(`//div[text()='Laptop Accessories']/parent::div`)
     await source.dragTo(target)
     await page.waitForTimeout(3000)
+
 })
 
  
