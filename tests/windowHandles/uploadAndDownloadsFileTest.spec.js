@@ -85,7 +85,7 @@ test("downloadFiles",async({browser})=>{
     await page.waitForTimeout(4000)  
 })
 
-test.only("dwonload_To_LocalSystem",async({page})=>{
+test("dwonload_To_LocalSystem",async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0") 
     await page.getByRole("textbox",{name:"Enter text here"}).fill("Hello I am downloading file from here")
     await page.locator("#fileName").fill("file.txt")

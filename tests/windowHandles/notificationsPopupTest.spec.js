@@ -14,7 +14,7 @@ test("auto_Hanlde_Notification",async({browser})=>{
     console.log(`permissions:${result}`);
 })
 
-test.only("give_Permission_to_Notification",async({browser})=>{
+test("give_Permission_to_Notification",async({browser})=>{
     let context = await browser.newContext({permissions:["notifications","microphone","geolocation","camera"]}) // to give premission
 
     /* We can give this permissions:["notifications"] config js also to get permission

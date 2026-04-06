@@ -19,7 +19,7 @@ test("create_multiple_tabs_test", async({browser})=>{
     await page1.waitForTimeout(3000)
 })
 
-test.only("handling_multiple_tabs_test", async({browser})=>{
+test("handling_multiple_tabs_test", async({browser})=>{
     let context = await browser.newContext();
     let page = await context.newPage();
     /* example 1 */

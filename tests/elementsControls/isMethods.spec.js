@@ -35,7 +35,7 @@ test("isEditable method", async({page})=>{
 })
 
 /* To check the checked state of the element we can use isChecked() method */
-test.only("isChecked method", async({page})=>{
+test("isChecked method", async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/checkbox?sublist=0");
     await page.locator("//input[@id='domain_a']").click();
 

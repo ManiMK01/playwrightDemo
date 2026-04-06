@@ -57,7 +57,7 @@ test("dialogs handling",async({browser})=>{
     // page.once('dialog',()=>{})
 })
 
-test.only("using_Page_Once", async({browser})=>{
+test("using_Page_Once", async({browser})=>{
     let context = await browser.newContext();
     let page = await context.newPage();
 
