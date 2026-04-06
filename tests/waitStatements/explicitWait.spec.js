@@ -42,7 +42,7 @@ test("wait for navigation", async({page})=>{
     /* we need to execute this line parallely so we use promise */
     await Promise.all([
         page.waitForNavigation(),
-        page.click("nav-cart-count-container")
+        page.click("#nav-cart-count-container")
     ])
     //page.click("nav-cart-count-container")
 })

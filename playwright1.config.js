@@ -18,6 +18,7 @@ let timeStamp = date.getFullYear()+"_"+
     (date.getMonth()+1)+"_"+ date.getDate()+"__"+
     date.getHours()+"_"+date.getMinutes()+"_"+date.getSeconds();
   let reportFolder = `./advanceReport/report_${timeStamp}`;
+
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -32,6 +33,7 @@ export default defineConfig({
   //reporter: [['html',{outputFolder: "./advanceReport"}]],
   reporter: [['html',{outputFolder: reportFolder}]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  timeout: 60000,  /* By using timeout we can change the default timeout which is 30s */
   use: {
     headless : false,
     permissions:["notifications"],
