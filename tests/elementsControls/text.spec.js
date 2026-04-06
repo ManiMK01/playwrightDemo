@@ -54,7 +54,7 @@ test("get Attribute value", async({page})=>{
 })
 
 /* all() method is used to get all the elements that match the locator and return an array of elements. */
-test.only("allmethods", async({page})=>{
+test("allmethods", async({page})=>{
     await page.goto("https://www.flipkart.com/");
     await page.locator("//div[@class='css-175oi2r r-1awozwy']").first().waitFor();
     let allDivs = await page.locator("//div[@class='css-175oi2r r-1awozwy']").all();

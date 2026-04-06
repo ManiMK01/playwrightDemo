@@ -50,7 +50,7 @@ test("browser controls-2", async()=>{
     
 })
 
-test.only("Take Screenshot", async({page})=>{
+test("Take Screenshot", async({page})=>{
     await page.goto("https://www.amazon.in/",{ waitUntil: "networkidle" });
     console.log("Amazon website open"); 
     /* To take the screenshot of the webpage */

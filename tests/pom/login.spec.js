@@ -15,7 +15,7 @@ test("loginTest", async({page}) => {
     await page.waitForTimeout(3000)
 })
 
-test.only("loginUsingJsonTest", async({page}) => {
+test("loginUsingJsonTest", async({page}) => {
 
     let lp = new LoginPage(page);
     let url = logindata.url

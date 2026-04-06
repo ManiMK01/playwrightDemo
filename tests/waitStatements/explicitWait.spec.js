@@ -75,7 +75,7 @@ test("wait for loadState", async({page})=>{
 })
 
 
-test.only("waitforevent", async({page})=>{
+test("waitforevent", async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/download?sublist=0")
     await page.fill("#writeArea", "I am downloading the file")
     let [downloadfile] = await Promise.all([

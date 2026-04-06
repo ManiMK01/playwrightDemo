@@ -36,7 +36,7 @@ test("multi_dropdown test", async({page})=>{
     await page.waitForTimeout(3000)
 })
 
-test.only("custom_dropdown test", async({page})=>{
+test("custom_dropdown test", async({page})=>{
     await page.goto("https://www.amazon.in/s?k=ps5&crid=JL9T9MQJB7XB&sprefix=%2Caps%2C340&ref=nb_sb_ss_recent_1_0_recent")
     await page.locator("//select[@id='s-result-sort-select']").click({force:true});
     await page.locator("//a[@class='a-dropdown-link']").first().waitFor();

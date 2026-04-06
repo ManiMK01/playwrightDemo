@@ -12,7 +12,7 @@ test("hard code wait", async({page})=>{
     await page.locator("button#submit").click();
 })
 
-test.only("autosuggestion", async({page})=>{
+test("autosuggestion", async({page})=>{
     await page.goto("https://www.amazon.in/")
     await page.locator("//button[text()='Continue shopping']").click();
     await page.locator("input#twotabsearchtextbox").fill("mobile");

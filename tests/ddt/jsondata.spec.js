@@ -32,7 +32,7 @@ test("Usind_json_to_get_the_data",async({page})=>{
     }
 })
 
-test.only("Usind_Array_json_to_get_the_data",async({page})=>{
+test("Usind_Array_json_to_get_the_data",async({page})=>{
     // testData.forEach(d => {
     //     let url = d.url  
     //     let userName = d.userName

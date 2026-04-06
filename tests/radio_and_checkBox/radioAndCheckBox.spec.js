@@ -25,7 +25,7 @@ test("radio button test", async({page})=>{
     await page.waitForTimeout(3000)
 })
 
-test.only("check box test", async({page})=>{
+test("check box test", async({page})=>{
     await page.goto("https://demoapps.qspiders.com/ui/checkbox?sublist=0")
     await page.locator("//input[@id='domain_a']").check();
     await page.waitForTimeout(3000)

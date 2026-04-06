@@ -29,7 +29,7 @@ test("using_ValidAndInvalid_Data",async({page}) => {
     }
 })
 
-test.only("to_Avoid_Code_Duplication",async({page}) => {
+test("to_Avoid_Code_Duplication",async({page}) => {
     for(let key in data){ /* This 'in' loop is to get the key of main object example valid_data and invalid_data*/
         console.log(key);
         for(let d of data[key]){ /* This loop is to iterate the array of object data one after other by this we can avoid code duplication */

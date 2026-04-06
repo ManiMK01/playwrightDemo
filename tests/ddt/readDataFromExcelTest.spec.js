@@ -39,7 +39,7 @@ test("Read_MultipleData",async({page})=>{
 
 // http://49.249.28.218:8081/       
 
-test.only("pass_testData_to_App",async({browser})=>{
+test("pass_testData_to_App",async({browser})=>{
     let context = await browser.newContext();
     let page = await context.newPage()
 
