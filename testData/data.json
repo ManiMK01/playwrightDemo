@@ -1,0 +1,23 @@
+{"valid_data":[{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "student","password" : "Password123"
+},{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "student","password" : "Password123"
+},{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "student","password" : "Password123"
+}],
+"invalid_data":[{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "Manikandan","password" : "Password123"
+},{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "student","password" : "Passrd123"
+},{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "","password" : "Password123"
+},{
+    "url" : "https://practicetestautomation.com/practice-test-login/",
+    "userName" : "student","password" : ""
+}]}

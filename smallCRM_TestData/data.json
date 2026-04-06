@@ -1,0 +1,10 @@
+{
+    "url" : "http://49.249.28.218:8081/TestServer/Build/Small_CRM/",
+    "name" : "mk",
+    "email" : "mk",
+    "password" : "mk",
+    "rePassword" : "mk",
+    "conNum" : "9876543210",
+    "sub" : "logo colour",
+    "des" : "Font and colour in the logo is not as per the requirement"
+}
